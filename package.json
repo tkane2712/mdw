@@ -2,11 +2,11 @@
   "name": "memdaywkd",
   "version": "1.0.0",
   "description": "countdown",
-  "main": "server/server.js",
+  "main": "server.js",
   "scripts": {
     "client": "npm start --prefix client",
-    "start": "node server/server.js",
-    "server": "nodemon server/server.js",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "parcel": "parcel ./client/public/index.html",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
