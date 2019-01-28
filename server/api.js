@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const Twit = require("twit");
-const config = require("./config");
+const config = require("./keys");
 const T = new Twit(config);
 
 function randomNumber(limit) {
