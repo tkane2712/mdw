@@ -13,8 +13,8 @@ router.post("/api", (req, res) => {
   const days = req.body.days;
 
   const params = {
-    // q: `${days}days`,
-    q: `#${randomNumber(110)}days`,
+    q: `${days}days`,
+    // q: `#${randomNumber(110)}days`,
     count: 15
   };
 
