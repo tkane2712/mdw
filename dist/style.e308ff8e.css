@@ -1,0 +1,44 @@
+html {
+  background: tan url(https://source.unsplash.com/collection/329879);
+  background-size: cover;
+  background-position: center center;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "countdown" "tweet";
+  height: 98vh;
+  grid-gap: 15px;
+}
+
+.countdown {
+  grid-area: countdown;
+  grid-gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.countdown > * {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background: white;
+  padding: 10px 30px;
+}
+
+.tweet-wrapper {
+  grid-area: tweet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tweet-wrapper > * {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background: white;
+  padding: 10px 30px;
+}
