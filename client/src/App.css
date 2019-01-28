@@ -1,0 +1,97 @@
+body {
+  background: tan url(https://source.unsplash.com/collection/329879);
+  background-size: cover;
+  background-position: center center;
+  font-family: Helvetica;
+}
+
+.app {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 28vh 69vh;
+  grid-template-areas: "countdown" "tweet";
+  margin: 0 10px;
+}
+
+/* Countdown */
+
+.count-wrapper {
+  grid-area: countdown;
+  display: grid;
+  align-content: center;
+}
+
+h3 {
+  margin: 0;
+  font-weight: lighter;
+}
+
+.hashtag {
+  font-size: 6vw;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 30px;
+}
+
+.time {
+  font-size: 4vw;
+  text-transform: lowercase;
+  margin-top: 4px;
+}
+
+/* Tweet */
+
+.tweet-wrapper {
+  grid-area: tweet;
+  display: grid;
+  /* align-content: center; */
+  justify-content: center;
+  /* padding: 10px; */
+}
+
+.twit-tweet {
+  display: grid;
+  grid-template-columns: minmax(80vw, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  padding: 0;
+}
+/*
+/*
+
+
+.tweet-wrapper > * {
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+}
+
+
+
+.twit-tweet {
+  display: flex;
+  justify-content: center;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+@media (min-width: 1000px) {
+  .app {
+    grid-gap: 50px;
+  }
+
+  .countdown {
+    font-size: 4vh;
+  18
+} */
