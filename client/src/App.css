@@ -7,18 +7,17 @@ body {
 
 .app {
   display: grid;
-  grid-gap: 20px;
-  grid-template-rows: 28vh 69vh;
-  grid-template-areas: "countdown" "tweet";
-  margin: 0 10px;
+  grid-template-rows: 1fr auto 10fr;
+  height: 100vh;
+  grid-gap: 5px;
+  grid-template-areas: "padding" "countdown" "tweet";
 }
 
 /* Countdown */
 
 .count-wrapper {
   grid-area: countdown;
-  display: grid;
-  align-content: center;
+  display: stretch;
 }
 
 h3 {
@@ -26,22 +25,19 @@ h3 {
   font-weight: lighter;
 }
 
+.countdown {
+  display: grid;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 45px;
+  border-radius: 5px;
+}
+
 .hashtag {
   font-size: 6vw;
   text-transform: uppercase;
   margin: 0;
-  display: flex;
-  justify-content: center;
   border-bottom: 1px solid black;
-}
-
-.countdown {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 10px 30px;
 }
 
 .time {
@@ -55,9 +51,8 @@ h3 {
 .tweet-wrapper {
   grid-area: tweet;
   display: grid;
-  /* align-content: center; */
   justify-content: center;
-  /* padding: 10px; */
+  align-content: center;
 }
 
 .twit-tweet {
@@ -67,31 +62,11 @@ h3 {
   justify-items: center;
   padding: 0;
 }
-/*
-/*
 
-
-.tweet-wrapper > * {
-  display: flex;
-  justify-content: center;
-  padding: 10px 30px;
-}
-
-
-
-.twit-tweet {
-  display: flex;
-  justify-content: center;
-  max-width: 80vw;
-  max-height: 80vh;
-}
-
-@media (min-width: 1000px) {
-  .app {
-    grid-gap: 50px;
+@media (min-width: 595px) {
+  .count-wrapper {
+    display: grid;
+    align-content: center;
+    justify-content: center;
   }
-
-  .countdown {
-    font-size: 4vh;
-  18
-} */
+}
