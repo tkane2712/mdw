@@ -11,6 +11,8 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "../client/public")));
 app.use("/", api);
 
+require("newrelic");
+
 // serve static assets if in prod
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
